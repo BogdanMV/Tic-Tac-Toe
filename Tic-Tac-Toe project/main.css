@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #f2bc94;
+    color: #722620;
+  }
+
+  .frame{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .square {
+    border: 3px solid #30110d;
+    text-align: center;
+    font-size: 150px;
+    line-height: 190px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.square:hover {
+    background-color: #ebae80;
+}
+
+#restart {
+    margin: 0;
+    background-color: #722620;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+    color: #f2bc94;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+h1 {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+
+.playerwins {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 50px;
+}
+
+@media (max-width: 1600px) {
+  .frame {
+    height: 300px;
+    width: 300px;
+  }
+  .square {
+  font-size: 74px;
+    line-height: 94px;
+  }
+
+  h1, .playerwins {
+    font-size: 30px;
+  }
+
+  h1{
+    left: 42%
+  }
+}
+
+@media (max-width: 870px) {
+  .frame {
+    height: 180px;
+    width: 180px;
+  }
+  .square {
+  font-size: 35px;
+    line-height: 50px;
+  }
+
+  h1, .playerwins {
+    font-size: 15px;
+  }
+
+  h1{
+    top: 30%;
+  }
+
+  .playerwins{
+    top: 80%;
+    left: 40%;
+  }
+
+  #restart{
+    height: 30px;
+    width: 60px;
+    border-radius: 15px;
+    font-size: 13px;
+    top: 53%;
+    left: 80%;
+  }
+}

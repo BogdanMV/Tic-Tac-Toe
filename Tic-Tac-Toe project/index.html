@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>TIC-TAC-TOE</h1>
+    <div class="frame">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="announce"></div>
+
+    <div class="reset">
+        <button id="restart" onclick="gameReset()">Restart</button>
+    </div>
+
+    <div class="playerwins">
+        <div class="Xscore" id="xscore">
+            Times X won: 0
+        </div>
+        <br>
+        <div class="Oscore" id="oscore">
+            Times O won: 0
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
